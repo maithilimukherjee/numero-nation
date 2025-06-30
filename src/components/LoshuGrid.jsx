@@ -23,14 +23,12 @@ const LoshuGrid = () => {
     return n;
   };
 
-  // mulank = sum of birth day digits
+
   const day = new Date(dob).getDate();
   const mulank = day < 10 ? day : day.toString().split('').map(Number).reduce((a, b) => a + b);
 
-  // life path = reduced total of dob digits
   const lifePath = reduceToSingleDigit(sum);
 
-  // ✅ include mulank and life path in grid
   if (mulank >= 1 && mulank <= 9) digitCount[mulank]++;
   if (lifePath >= 1 && lifePath <= 9) digitCount[lifePath]++;
 
