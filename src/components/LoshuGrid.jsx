@@ -62,7 +62,7 @@ const LoshuGrid = () => {
           </div>
         ))}
       </div>
-      <footer>made by: maithili mukherjee</footer>
+      <footer>by: maithili mukherjee</footer>
     </div>
   );
 };
