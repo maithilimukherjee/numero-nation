@@ -6,16 +6,16 @@ const LoshuGrid = () => {
   const location = useLocation();
   const { name, dob, dobDigits } = location.state || {};
 
-  // count digits for loshu grid
+  
   const digitCount = Array(10).fill(0);
   dobDigits?.forEach(d => {
     if (d >= 1 && d <= 9) digitCount[d]++;
   });
 
-  // calculate total sum of dob digits
+ 
   const sum = dobDigits?.reduce((acc, val) => acc + val, 0) || 0;
 
-  // reduce to single digit
+ 
   const reduceToSingleDigit = (n) => {
     while (n > 9) {
       n = n.toString().split('').reduce((acc, digit) => acc + Number(digit), 0);
@@ -43,8 +43,9 @@ const LoshuGrid = () => {
       <div className='birthProfile'>
         <p><strong>name:</strong> {name}</p>
         <p><strong>dob:</strong> {dob}</p>
-        <p><strong>life path number:</strong> {lifePath}</p>
         <p><strong>mulank:</strong> {mulank}</p>
+        <p><strong>life path number:</strong> {lifePath}</p>
+        
       </div>
 
       <div className='displayGrid'>
@@ -61,6 +62,7 @@ const LoshuGrid = () => {
           </div>
         ))}
       </div>
+      <footer>made by: maithili mukherjee</footer>
     </div>
   );
 };
