@@ -41,10 +41,10 @@ const LoshuGrid = () => {
   return (
     <div className='loshuContainer'>
       <div className='birthProfile'>
-        <p><strong>name:</strong> {name}</p>
-        <p><strong>dob:</strong> {dob}</p>
-        <p><strong>mulank:</strong> {mulank}</p>
-        <p><strong>life path number:</strong> {lifePath}</p>
+        <p><strong>name: </strong> {name}</p>
+        <p><strong>dob: </strong> {dob}</p>
+        <p><strong>mulank: </strong> {mulank}</p>
+        <p><strong>life path number: </strong> {lifePath}</p>
         
       </div>
 
