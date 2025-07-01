@@ -3,7 +3,7 @@ import './Header.css';
 const Header = () => {
   return (
   <>
-  <header>──── ୨୧ ──── numero-nation ──── ୨୧ ────</header>
+  <header>─ ୨୧ ─ numero-nation ─ ୨୧ ─</header>
   <p></p>
   </>);
 }
