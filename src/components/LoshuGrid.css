@@ -3,8 +3,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   justify-content: flex-start;
+  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: salmon;
   min-height: 100vh;
@@ -30,7 +30,7 @@ body {
 .gridRow {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 6px;
 }
 
 .gridCell {

@@ -34,7 +34,6 @@ const handleSubmit = () => {
         <button className='submitBtn' onClick={handleSubmit}>generate loshu-grid</button>
       </div>
 
-      <footer>brought to you by : maithili mukherjee.</footer>
     </div>
   )
 }
